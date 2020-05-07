@@ -1,0 +1,57 @@
+//Write a function that takes in a number and returns 'even' if the number is even or 'odd' if it is odd.
+
+//what I am getting: number
+function evenOrOdd(num){
+ //divisible by 2
+  // if divided by 2 the number returned is a whole number
+  // if(num/2 == Math.floor(num/2)){
+  //   return "even";
+  // }
+  // return "odd";
+  // if(Number.isInteger(num/2)){
+  //   return "even";
+  // }
+  // return "odd";
+  // if(num % 2 == 0){
+  //   return "even";
+  // }
+  // return "odd";
+}
+
+//what returns: 'even' || 'odd'
+console.log(evenOrOdd(2))
+console.log(evenOrOdd(3))
+console.log(evenOrOdd(0))
+console.log(evenOrOdd(-2))
+console.log(evenOrOdd(-1))
+
+//Given the string "team number 2", transform and return the string in camelCase
+let test = "this is a test named variable"
+
+
+//input string
+function camelCase(str) {
+  //split into individual words
+  let strArr = str.split(" ")
+  //every word after the first
+  for(let i = 1; i < strArr.length; i++){
+    let word = strArr[i]
+    //uppercase the first character in the word
+    strArr[i] = word[0].toUpperCase() + word.substring(1)
+  }
+  //put them back together without the space
+  return strArr.join("")
+}
+
+
+camelCase(test)
+
+
+function camelCase2(str) {
+  return str.split(" ").map((word, i) => {
+    if(!i)return word
+    return word[0].toUpperCase() + word.substring(1)
+    }).join("")
+}
+
+camelCase2(test)

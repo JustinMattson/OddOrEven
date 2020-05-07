@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Morning Challenge</title>
+  </head>
+  <body>
+    <header></header>
+    <main class="container-fluid">
+      <div class="row">
+        <div
+          class="col-12 order-1 bg-secondary d-flex justify-content-center wrap"
+        >
+          <h1 class="text-center">
+            Click on the button to generate a random number between -100 and
+            100.
+          </h1>
+        </div>
+        <div class="col-6 order-2 d-flex justify-content-center nowrap">
+          <h3 id="number" class="text-center nowrap">number</h3>
+        </div>
+        <!-- TODO center the text vertically! -->
+        <div class="col-6 order-3 d-flex justify-content-center">
+          <h3 id="result" class="text-center d-flex">result</h3>
+        </div>
+        <div
+          class="col-12 order-4 d-flex justify-content-center bg-success p-3"
+        >
+          <button onclick="generateNumber()">Odd or Even</button>
+        </div>
+      </div>
+      <div id="result"></div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
